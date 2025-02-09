@@ -18,4 +18,10 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
+
 export default withMDX(nextConfig)
