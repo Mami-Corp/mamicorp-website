@@ -23,6 +23,9 @@ const config = withMDX({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  env: {
+    NEXT_PUBLIC_SITE_URL: 'https://mamicorp.com',
+  },
 })
 
 export default config
