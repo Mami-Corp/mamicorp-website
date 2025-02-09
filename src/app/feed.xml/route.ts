@@ -1,6 +1,7 @@
 import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
+export const runtime = 'edge'
 
 export async function GET(req: Request) {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
@@ -10,13 +11,13 @@ export async function GET(req: Request) {
   }
 
   let author = {
-    name: 'Joe Davola',
-    email: 'crazy.joe@example.com',
+    name: 'Mami Corp.',
+    email: 'org@mamicorp.com',
   }
 
   let feed = new Feed({
-    title: 'Commit',
-    description: 'Open-source Git client for macOS minimalists',
+    title: 'Mami Corp.',
+    description: 'Enterprise AI baddie solutions.',
     author,
     id: siteUrl,
     link: siteUrl,
