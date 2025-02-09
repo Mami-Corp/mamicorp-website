@@ -18,10 +18,11 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
-module.exports = {
+const config = withMDX({
+  ...nextConfig,
   eslint: {
     ignoreDuringBuilds: true,
   },
-}
+})
 
-export default withMDX(nextConfig)
+export default config
